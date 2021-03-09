@@ -2,7 +2,7 @@ description:Ranges from normie to Elite.Privacy Security Improvements tips links
 
 License,GPLv3.
 
-The both plugin and main needs the json to work.Both need java jdk or jre to run.
+both plugin and main needs the json to work.Main must have java jdk or jre to run.Iesys already have prebuilt
 Download repo unzip.Put it at a clean and safe place.
 Setup jre or jdk,if you have not(main_fixed folder is used).Or start Iesys(plugin folder is used)
 If you want default ui go to defaultui
