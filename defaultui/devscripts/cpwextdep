@@ -1,0 +1,11 @@
+export RI_J_H_top="/run/media/anon/Seagate Expansion Drive/ProgramSetup/Codercsbackup/Java tools/openjdk/referenceimplementation/openjdk-15+36_linux-x64_bin/jdk-15"
+export EXE4J_JAVA_HOME="$RI_J_H_top/bin"
+export JDKLIB="$RI_J_H_top/lib"
+export PATH="$EXE4J_JAVA_HOME:$PATH"
+export projrootfoldername=toppackgname
+export ori=$PWD
+cd ..
+export newcp=$PATH:$ori:$ori/*:$PWD/*
+cd "$ori"
+javac -verbose -cp "$newcp" *.java
+echo shcompilewextdepwJDK15v4>fulllog.txt
