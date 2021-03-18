@@ -27,8 +27,7 @@ public class Upsecpriv{
 	//https://stackoverflow.com/questions/10576111/how-to-add-a-list-of-jbuttons-to-a-jframe
 	public static void main(String[] args){
 	String jsonflname="dt";
-		if(needhelp(jsonflname)){return "Give the json filename,it should be in the plugin folder too.";}
-		else{
+		//if(needhelp(jsonflname)){return "Give the json filename,it should be in the plugin folder too.";}else{return "ok";}useful for plugin.lol
 		f=new JFrame();//creating instance of JFrame
 		        
 	    f.setSize(400,500);//400 width and 500 height  
@@ -37,7 +36,8 @@ public class Upsecpriv{
 	    // javax.swing.JScrollPane gridPane =new javax.swing.JScrollPane();
 		try{
 		String jsonfilename=jsonflname+".json";
-        	org.json.JSONObject jsonobj=parsefileasjson(jsonfilename,java.nio.charset.StandardCharsets.UTF_8);
+		Upsecpriv clsobj=new Upsecpriv();
+        	org.json.JSONObject jsonobj=clsobj.parsefileasjson(jsonfilename,java.nio.charset.StandardCharsets.UTF_8);
 		if(jsonobj!=null){
 		//b= new JList(week);javax.swing.JButton,listbtn.setPrefWidth(100);listbtn.setPrefHeight(70);
 		if(jsonobj.length()>20){
@@ -89,7 +89,7 @@ java.util.Map<Boolean,java.util.Map<String,Object>> collect = map.entrySet()
 		f.setVisible(true);//making the frame visible
 		}
 		}catch(Exception e){e.printStackTrace();}
-		return "ok";}
+		
 	
 	}
 	/**
